@@ -1,10 +1,22 @@
 package ItsYaBoy;
 
-public class Producten {
+import java.util.ArrayList;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public abstract class Producten {
+	ArrayList<Boeken> boeken = new ArrayList();
+	ArrayList<Electronica> electronica = new ArrayList();
+	int prijs;
+	String titel;
+	
+	public void verkopen() {
+		System.out.println("Ik ben te verkopen");
 	}
+}
 
+class Boeken extends Producten {
+	
+}
+
+class Electronica extends Producten {
+	
 }
