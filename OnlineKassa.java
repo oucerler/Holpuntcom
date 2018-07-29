@@ -16,4 +16,8 @@ public class OnlineKassa {
 	int getal = Integer.parseInt(invoer);
 	return getal;
 	}
+	void afrekenen(Producten producten) {
+		geldhoeveelheid +=producten.prijs;
+		
+	}
 }
